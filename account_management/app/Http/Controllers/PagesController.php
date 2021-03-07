@@ -19,6 +19,14 @@ class PagesController extends Controller
     }
 
     public function transaction() {
-        return view('pages.addTransaction');
+        return view('pages.transactions');
+    }
+
+    public function calendar() {
+        return view('pages.calendar');
+    }
+
+    public function variables() {
+        return view('pages.variables');
     }
 }

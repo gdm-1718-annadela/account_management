@@ -1,19 +1,19 @@
 <div>
     <ul>
         <li>
-            <a href="/dashboard">Dashboard</a>
+            <a href="/">Dashboard</a>
         </li>
         <li>
             <a href="/accounts">Accounts</a>
         </li>
         <li>
-            <a href="">Add transaction</a>
+            <a href="/transactions">Add transaction</a>
         </li>
         <li>
-            <a href="">Calender</a>
+            <a href="/calendar">Calendar</a>
         </li>
         <li>
-            <a href="">Changeable variables</a>
+            <a href="/variables">Variables</a>
         </li>
     </ul>
 </div>

@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@home');
-Route::get('/dashboard', 'PagesController@dashboard');
+Route::get('/', 'PagesController@dashboard');
 Route::get('/accounts', 'PagesController@accounts');
-Route::get('/transaction/add', 'PagesController@transaction');
+Route::get('/transactions', 'PagesController@transaction');
+Route::get('/calendar', 'PagesController@calendar');
+Route::get('/variables', 'PagesController@variables');
