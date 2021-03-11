@@ -1,0 +1,73 @@
+.nav {
+    width: 20vw;
+    height: 100vw;
+    position: fixed;
+    background: $color-blue-dark;
+    overflow: hidden;
+}
+
+.nav__logos {
+    height: $header-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $base-offset/2;
+    
+    svg {
+        fill: $color-white;
+    }
+}
+
+.nav__links {
+    margin-top: $base-offset * 2;
+}
+
+.nav__link-item {
+    margin-left: $base-offset;
+    list-style: none;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    display: flex;
+    transition: all 0.2s $animationBezier;
+
+    &--active {
+        background: $color-pink;
+        box-shadow: 6px 6px 12px #2D304B,
+                    -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
+    }
+
+    &:hover:not(.nav__link-item--active) {
+        background: $color-blue-neutral;
+        box-shadow: 6px 6px 12px #2D304B,
+                    -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 1em;
+    }
+}
+
+.nav__link {
+    font-family: 'Nunito';
+    padding: 0.5em 0 0.5em $base-offset/2;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: $color-white;
+    @include font-size(16px, 22px);
+
+    .nav__svg {
+        color: currentColor;
+        fill: currentColor;
+        width: 0.8em;
+        margin-right: 0.5em;
+        transition: all 0.2s $animationBezier;
+    }
+
+    &:hover {
+        .nav__svg {
+            transform: scale(1.15) rotate(15deg);
+            margin-right: 0.7em;
+        }
+    }
+}
