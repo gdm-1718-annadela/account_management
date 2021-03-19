@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="app">
-    @include('component.header')
+    @include('component.nav')
     @yield('content')
 </div>
 </body>
