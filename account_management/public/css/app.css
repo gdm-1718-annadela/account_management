@@ -121,10 +121,20 @@ a {
   height: 100vh;
   position: fixed;
   background: #323659;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: #FFFFFD;
+  transform: translateX(100%);
 }
 
 .nav__logos {
@@ -146,10 +156,11 @@ a {
 .nav__link-item {
   margin-left: 50px;
   list-style: none;
-  border-top-left-radius: 1000px;
-  border-bottom-left-radius: 1000px;
+  border-top-left-radius: 100vw;
+  border-bottom-left-radius: 100vw;
   display: flex;
-  transition: all 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+  transition: background 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85), box-shadow 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+  position: relative;
 }
 
 .nav__link-item--active {
@@ -196,12 +207,53 @@ a {
   fill: currentColor;
   width: 0.8em;
   margin-right: 0.5em;
-  transition: all 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+  transition: transform 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85), margin-right 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85);
 }
 
 .nav__link:hover .nav__svg {
   transform: scale(1.15) rotate(15deg);
   margin-right: 0.7em;
+}
+
+.navsub {
+  height: 0%;
+  background: #728AE2;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+  border-top-right-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  z-index: 1;
+  will-change: height;
+  transition: height 0.1s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+  overflow: hidden;
+}
+
+.nav__link-item:hover .navsub {
+  height: 100%;
+}
+
+.navsub__item {
+  height: 100%;
+  width: 1.5em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navsub__item > svg {
+  fill: #FFFFFD;
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+}
+
+.navsub__item > svg:hover {
+  transform: rotate(10deg);
 }
 
 .nav__love {
