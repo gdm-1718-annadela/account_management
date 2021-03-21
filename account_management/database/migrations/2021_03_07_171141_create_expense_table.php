@@ -16,9 +16,12 @@ class CreateExpenseTable extends Migration
         Schema::create('expense', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('category_id');
             $table->string('field_expense_name');
             $table->float('field_expense_amount');
+            $table->boolean('field_expense_increased');
+            $table->string('field_expense_period_type');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
         });
     }
 
