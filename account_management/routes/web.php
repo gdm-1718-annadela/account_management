@@ -17,4 +17,6 @@ Route::get('/', 'PagesController@dashboard');
 Route::get('/accounts', 'PagesController@accounts');
 Route::get('/transactions', 'PagesController@transaction');
 Route::get('/calendar', 'PagesController@calendar');
-Route::get('/variables', 'PagesController@variables');
+Route::get('/variables', 'VariableController@getData');
+Route::post('/variables/update/{salary_id}', 'VariableController@update')->name('updateSalary');
+Route::get('/variables/delete/{salary_id}', 'VariableController@delete')->name('deleteSalary');
