@@ -4,16 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Variable extends Model
+class Period extends Model
 {
-    protected $table = 'expense';
+    protected $table = 'period';
 
     protected $fillable = [
-        'field_expense_name',
-        'field_expense_amount',
-        'field_expense_increased',
-        'category_id',
-        'period_id',
+        'field_period_name',
+        'field_period_multiplier',
     ];
 
     public function variable(){

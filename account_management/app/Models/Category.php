@@ -12,8 +12,8 @@ class Category extends Model
         'field_category_name',
     ];
 
-    public function variable(){
-        return $this->belongsTo('App\Models\Variable');
+    public function expense(){
+        return $this->belongsTo('App\Models\Expense');
     }
 
 }
