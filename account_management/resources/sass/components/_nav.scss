@@ -3,10 +3,22 @@
     height: 100vh;
     position: fixed;
     background: $color-blue-dark;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    // link shadow overflow mask fix
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        background: $color-white;
+        transform: translateX(100%);
+    }
 }
 
 .nav__logos {
@@ -28,10 +40,11 @@
 .nav__link-item {
     margin-left: $base-offset;
     list-style: none;
-    border-top-left-radius: 1000px;
-    border-bottom-left-radius: 1000px;
+    border-top-left-radius: 100vw;
+    border-bottom-left-radius: 100vw;
     display: flex;
-    transition: all 0.2s $animationBezier;
+    transition: background 0.2s $animationBezier, box-shadow 0.2s $animationBezier;
+    position: relative;
 
     &--active {
         background: $color-pink;
@@ -64,7 +77,7 @@
         fill: currentColor;
         width: 0.8em;
         margin-right: 0.5em;
-        transition: all 0.2s $animationBezier;
+        transition: transform 0.2s $animationBezier, margin-right 0.2s $animationBezier;
     }
 
     &:hover {
@@ -75,6 +88,49 @@
     }
 }
 
+// sub menus
+.navsub {
+    height: 0%;
+    background: $color-blue-neutral;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+    border-top-right-radius: 100vw;
+    border-bottom-right-radius: 100vw;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    z-index: 1;
+    will-change: height;
+    transition: height 0.1s $animationBezier;
+    overflow: hidden;
+}
+
+.nav__link-item:hover .navsub {
+    height: 100%;
+}
+
+.navsub__item {
+    height: 100%;
+    width: 1.5em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>svg {
+        fill: $color-white;
+        will-change: transform;
+        transition: transform 0.25s $animationBezier;
+
+        &:hover {
+            transform: rotate(10deg);
+        }
+    }
+}
+
+// love
 .nav__love {
     width: 50%;
     align-self: center;
