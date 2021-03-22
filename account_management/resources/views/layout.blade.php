@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="app">
-    @include('component.nav')
+{{--    @include('component.nav')--}}
     @yield('content')
 </div>
 </body>

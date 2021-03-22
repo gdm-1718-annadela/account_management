@@ -18,7 +18,7 @@ class CreateTransactionTable extends Migration
             $table->timestamps();
             $table->date('field_transaction_date');
             $table->string('field_transaction_desc');
-            $table->boolean('field_transaction_increased')->nullable();
+            $table->boolean('field_transaction_increased');
             $table->float('field_transaction_amount');
             $table->unsignedBigInteger('account_transaction_id');
             $table->foreign('account_transaction_id')->references('id')->on('account_transaction')->onDelete('cascade');
