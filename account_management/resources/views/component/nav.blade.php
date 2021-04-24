@@ -25,7 +25,7 @@
                     Dashboard
                 </a>
             </li>
-            <li class="{{ str_contains(request()->url(), '/accounts') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
+            <li class="{{ str_contains(request()->url(), '/accounts') ? 'nav__link-item--active' : '' }} {{ str_contains(request()->url(), '/account') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
                 <a class="nav__link" href="/accounts">
                     <svg class="nav__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16">
                         <path d="M15.7,9.1C17,10.1,18,11.3,18,13v3h4v-3C22,10.8,18.4,9.5,15.7,9.1z"/>
@@ -44,7 +44,7 @@
                                 style="fill-rule:nonzero;" />
                         </svg>
                     </a>
-                    <a href="{{ route('addAccount') }}" class="navsub__item navsub__add">
+                    <a href="{{ route('createAccount') }}" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M58.333,33.333l-25,0l0,25l-8.333,0l0,-25l-25,0l0,-8.333l25,0l0,-25l8.333,0l0,25l25,0l0,8.333Z"

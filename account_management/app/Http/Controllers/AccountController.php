@@ -29,15 +29,15 @@ class AccountController extends Controller
         ]);
 
         $data = [
-            'category_id'=>request('name'),
-            'title'=>request('description'),
-            'title'=>request('amount'),
+            'field_account_name'=>request('name'),
+            'field_account_desc'=>request('description'),
+            'field_account_total_amount'=>request('amount'),
         ];
 
-        $story= Story::create($data);
-        $story_id = Story::where('id',$story->id)->first()->id;
+        $account = Account::create($data);
+        $account_id = Account::where('id', $account->id)->first()->id;
 
-        return redirect('/story/edit/'. $story_id);
+        return redirect('/account/detail/'. $account_id);
 
         dd('test');
     }

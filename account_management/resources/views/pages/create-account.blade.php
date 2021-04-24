@@ -1,3 +1,6 @@
+@extends('layout')
+
+@section('content')
 <h1>Add Account</h1>
 {{--<form action="{{route('updateExpense', $expense->id)}}" method="post">--}}
 <form action="{{route('saveAccount')}}" method="post">
@@ -10,3 +13,4 @@
     <input type="text" name="amount" value="1000">
     <button type="submit">Add account</button>
 </form>
+@endsection
