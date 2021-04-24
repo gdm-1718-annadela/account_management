@@ -30,4 +30,5 @@ Route::get('/account/create', 'AccountController@createAccount')->name('createAc
 Route::post('/account/save', 'AccountController@saveAccount')->name('saveAccount');
 Route::get('/account/add', 'AccountController@addAccount')->name('addAccount');
 Route::get('/account/edit/{id}', 'AccountController@editAccount')->name('editAccount');
+Route::post('/account/update/{id}', 'AccountController@updateAccount')->name('updateAccount');
 Route::get('/account/delete/{id}', 'AccountController@deleteAccount')->name('deleteAccount');

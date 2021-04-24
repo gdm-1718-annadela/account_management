@@ -6,11 +6,11 @@
 <form action="{{route('saveAccount')}}" method="post">
     @csrf
     <label>Name of your account</label>
-    <input type="text" name="name" value="zichtrekeningen">
+    <input type="text" name="name">
     <label>Describe what this account is about</label>
-    <textarea  name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit massa enim nec dui nunc mattis enim.</textarea>
+    <textarea  name="description"></textarea>
     <label>How much is currently on it?</label>
-    <input type="text" name="amount" value="1000">
+    <input type="text" name="amount">
     <button type="submit">Add account</button>
 </form>
 @endsection

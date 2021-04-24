@@ -38,13 +38,29 @@ class AccountController extends Controller
         $account_id = Account::where('id', $account->id)->first()->id;
 
         return redirect('/account/detail/'. $account_id);
-
-        dd('test');
     }
 
     public function editAccount($id) {
         $account = Account::all()->where('id', $id)->first();
         return view('pages.edit-account')->with(compact('account'));
+    }
+
+    public function updateAccount($id) {
+        $account = Account::where('id', $id)->first();
+        \request()->validate( [
+            'name'=> 'required',
+            'description'=> 'required',
+            'amount'=> 'required',
+        ]);
+
+        $data = [
+            'field_account_name'=>request('name'),
+            'field_account_desc'=>request('description'),
+            'field_account_total_amount'=>request('amount'),
+        ];
+
+        $account->update($data);
+        return redirect('/account/detail/'.$id)->with('succes', 'updated');
     }
 
     public function deleteAccount($id) {
