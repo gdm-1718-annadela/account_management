@@ -1,0 +1,6 @@
+.dashboard-netto-bruto {
+	flex: 1;
+	border: 1px solid green;
+
+	@include dashboard-card;
+}
