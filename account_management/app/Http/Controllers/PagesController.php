@@ -14,10 +14,6 @@ class PagesController extends Controller
         return view('pages.dashboard');
     }
 
-    public function accounts() {
-        return view('pages.accounts');
-    }
-
     public function transaction() {
         return view('pages.transactions');
     }

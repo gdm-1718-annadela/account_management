@@ -21,11 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e586245f-6b71-4e99-a885-1b2dd40ce524" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VariableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VariableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Salary.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Salary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Variable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/variables.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/variables.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2013_03_06_180559_create_account_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2013_03_06_180559_create_account_transaction_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_06_175239_create_account_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_06_175239_create_account_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_06_175658_create_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_06_175658_create_transaction_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@dashboard');
-Route::get('/accounts', 'PagesController@accounts');
+Route::get('/accounts', 'AccountController@getData');
 Route::get('/transactions', 'PagesController@transaction');
 Route::get('/calendar', 'PagesController@calendar');
 Route::get('/variables', 'VariableController@getData');
