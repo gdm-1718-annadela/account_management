@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     gap: $base-offset/2;
-    
+
     svg {
         fill: $color-white;
     }
@@ -49,14 +49,12 @@
 
     &--active {
         background: $color-pink;
-        box-shadow: 6px 6px 12px #2D304B,
-                    -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
+        box-shadow: 6px 6px 12px #2d304b, -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
     }
 
     &:hover:not(.nav__link-item--active) {
         background: $color-blue-neutral;
-        box-shadow: 6px 6px 12px #2D304B,
-                    -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
+        box-shadow: 6px 6px 12px #2d304b, -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
     }
 
     &:not(:last-child) {
@@ -65,12 +63,13 @@
 }
 
 .nav__link {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     padding: 0.5em 0 0.5em $base-offset/2;
     display: flex;
     align-items: center;
     flex: 1;
     color: $color-white;
+
     @include font-size(16px, 22px);
 
     .nav__svg {
@@ -120,7 +119,7 @@
     justify-content: center;
     align-items: center;
 
-    &>svg {
+    & > svg {
         fill: $color-white;
         will-change: transform;
         transition: transform 0.25s $animationBezier;

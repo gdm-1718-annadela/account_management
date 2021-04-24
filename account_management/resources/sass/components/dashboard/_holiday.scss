@@ -1,5 +1,104 @@
 .dashboard-holiday {
 	width: 100%;
-	border: 1px solid blue;
 	margin-top: $base-offset;
+	display: flex;
+	align-items: center;
+	padding: $base-offset $base-offset;
+	background: $color-white;
+
+	@include dashboard-card;
+}
+
+.dashboard-holiday__day {
+	display: flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+
+.dashboard-holiday__day-name {
+	padding-bottom: 0.5em;
+	text-transform: uppercase;
+
+	@include font-size(22px, 32px);
+}
+
+.dashboard-holiday__shape {
+	position: relative;
+	background: $color-blue-neutral;
+	width: 100%;
+	height: 5px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 0.7em;
+		height: 0.7em;
+		border-radius: 50%;
+		background: $color-white;
+		border: 0.3em solid $color-blue-neutral;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&--first {
+		width: 50%;
+		margin-left: auto;
+
+		&::after {
+			left: 0;
+		}
+	}
+
+	&--last {
+		width: 50%;
+		margin-right: auto;
+
+		&::after {
+			right: 0;
+			left: unset;
+			transform: translate(50%, -50%);
+		}
+	}
+}
+
+.dashboard-holiday__date {
+	padding-top: 1em;
+
+	@include font-size(16px, 22px);
+}
+
+.dashboard-holiday__day--today {
+	.dashboard-holiday__day-name {
+		font-weight: 700;
+		transform: scale(1.1875) translateY(-3px);
+	}
+
+	.dashboard-holiday__shape {
+		&::after {
+			width: 1.3em;
+			height: 1.3em;
+			border: 0.4em solid $color-pink;
+		}
+
+		.dashboard-holiday__today-type {
+			position: absolute;
+			left: calc(50% + 1em);
+			padding: 0.5em 1em;
+			color: white;
+			background: $color-pink;
+			font-size: 0.7em;
+			transform: translateY(-40%);
+			border-top-right-radius: 100vw;
+			border-bottom-right-radius: 100vw;
+			z-index: 1;
+		}
+	}
+
+	.dashboard-holiday__date {
+		font-weight: 700;
+		transform: scale(1.1875) translateY(3px);
+	}
 }
