@@ -1,10 +1,11 @@
 .nav {
     width: 20vw;
     height: 100vh;
-    position: fixed;
+    // position: fixed;
+    position: relative;
     background: $color-blue-dark;
     // overflow: hidden;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
 

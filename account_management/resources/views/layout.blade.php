@@ -22,7 +22,10 @@
 <body>
 <div id="app">
     @include('component.nav')
-    @yield('content')
+
+    <div class="content">
+        @yield('content')
+    </div>
 </div>
 </body>
 </html>

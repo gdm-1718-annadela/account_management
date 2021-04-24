@@ -7,3 +7,11 @@ a {
     all: unset;
     cursor: pointer;
 }
+
+#app {
+    display: flex;
+}
+
+.content {
+    z-index: 1;
+}
