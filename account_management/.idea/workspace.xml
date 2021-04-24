@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e586245f-6b71-4e99-a885-1b2dd40ce524" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/create-account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/create-account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/edit-account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/edit-account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/transactions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/transactions.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

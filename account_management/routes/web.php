@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@dashboard');
-Route::get('/transactions', 'PagesController@transaction');
 Route::get('/calendar', 'PagesController@calendar');
 Route::get('/variables', 'VariableController@getData');
 Route::post('/variables/salary/update/{salary_id}', 'VariableController@updateSalary')->name('updateSalary');
@@ -32,3 +31,6 @@ Route::get('/account/add', 'AccountController@addAccount')->name('addAccount');
 Route::get('/account/edit/{id}', 'AccountController@editAccount')->name('editAccount');
 Route::post('/account/update/{id}', 'AccountController@updateAccount')->name('updateAccount');
 Route::get('/account/delete/{id}', 'AccountController@deleteAccount')->name('deleteAccount');
+
+// transactions
+Route::get('/transactions', 'TransactionController@getData');
