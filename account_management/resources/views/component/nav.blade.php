@@ -36,7 +36,7 @@
                     Accounts
                 </a>
                 <div class="navsub">
-                    <a href="/accounts" class="navsub__item navsub__overview">
+                    <a href="{{ route('viewAccounts') }}" class="navsub__item navsub__overview">
                         <svg width="100%" height="100%" viewBox="0 0 75 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path
@@ -44,7 +44,7 @@
                                 style="fill-rule:nonzero;" />
                         </svg>
                     </a>
-                    <a href="/accounts" class="navsub__item navsub__add">
+                    <a href="{{ route('addAccount') }}" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M58.333,33.333l-25,0l0,25l-8.333,0l0,-25l-25,0l0,-8.333l25,0l0,-25l8.333,0l0,25l25,0l0,8.333Z"
@@ -84,7 +84,7 @@
                     <svg class="nav__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14">
                         <polygon points="4,6 0,10 4,14 4,11 11,11 11,9 4,9 "/>
                         <polygon points="18,4 14,0 14,3 7,3 7,5 14,5 14,8 "/>
-                    </svg>                
+                    </svg>
                     Transactions
                 </a>
                 <div class="navsub">
