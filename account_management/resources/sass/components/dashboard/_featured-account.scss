@@ -19,7 +19,7 @@
 	margin: $base-offset/2 0;
 	color: $color-orange;
 
-    @include font-size(26px, 37px);
+	@include font-size(26px, 36px);
 
 	& span {
 		@include font-size(34px, 48px);
@@ -28,7 +28,7 @@
 
 .dashboard-featured-account__description {
 	max-width: 50%;
-    font-style: italic;
+	font-style: italic;
 
-    @include font-size(9px, 12px);
+	@include font-size(9px, 12px);
 }
