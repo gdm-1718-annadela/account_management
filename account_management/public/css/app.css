@@ -134,6 +134,165 @@ a {
   font-family: "Nunito";
 }
 
+.accounts__container {
+  padding: 100px 50px;
+  font-family: "Nunito";
+}
+
+.accounts__account {
+  margin-bottom: 37.5px;
+  padding: 25px;
+  display: flex;
+  background: #FFFFFD;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: 3px 3px 6px rgba(45, 46, 48, 0.15);
+}
+
+.accounts__profile-picture {
+  background: #F28C4A;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #FFFFFD;
+  margin-right: 25px;
+}
+
+.accounts__profile-picture {
+  font-size: 27px;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+  .accounts__profile-picture {
+    font-size: calc(27px + 11 * (100vw - 400px) / 600);
+  }
+}
+
+@media (min-width: 1000px) {
+  .accounts__profile-picture {
+    font-size: 38px;
+  }
+}
+
+.accounts__details {
+  padding-right: 50px;
+  border-right: 1px solid rgba(45, 46, 48, 0.25);
+  flex: 1;
+}
+
+.accounts__name,
+.accounts__amount-number,
+.accounts__date {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.accounts__name,
+.accounts__amount-number,
+.accounts__date {
+  font-size: 17px;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+  .accounts__name,
+  .accounts__amount-number,
+  .accounts__date {
+    font-size: calc(17px + 7 * (100vw - 400px) / 600);
+  }
+}
+
+@media (min-width: 1000px) {
+  .accounts__name,
+  .accounts__amount-number,
+  .accounts__date {
+    font-size: 24px;
+  }
+}
+
+.accounts__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.accounts__amount-label,
+.accounts__description,
+.accounts__date-label {
+  font-style: italic;
+}
+
+.accounts__amount-label,
+.accounts__description,
+.accounts__date-label {
+  font-size: 13px;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+  .accounts__amount-label,
+  .accounts__description,
+  .accounts__date-label {
+    font-size: calc(13px + 5 * (100vw - 400px) / 600);
+  }
+}
+
+@media (min-width: 1000px) {
+  .accounts__amount-label,
+  .accounts__description,
+  .accounts__date-label {
+    font-size: 18px;
+  }
+}
+
+.accounts__amount {
+  width: 10%;
+}
+
+.accounts__last-updated {
+  width: 22%;
+}
+
+.accounts__amount,
+.accounts__last-updated {
+  padding: 0 50px;
+  border-right: 1px solid rgba(45, 46, 48, 0.25);
+}
+
+.accounts__actions {
+  display: flex;
+  padding-left: 50px;
+}
+
+.accounts__action {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accounts__action--view {
+  background: #728AE2;
+}
+
+.accounts__action--edit {
+  background: #F28C4A;
+  margin: 0 1.25em;
+}
+
+.accounts__action--delete {
+  background: #F55677;
+}
+
+.accounts__action svg {
+  fill: #FFFFFD;
+}
+
 .nav {
   width: 20vw;
   height: 100vh;

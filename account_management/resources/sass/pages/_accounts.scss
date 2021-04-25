@@ -1,7 +1,108 @@
 .accounts__container {
-
+	padding: 100px $base-offset;
+    font-family: 'Nunito';
 }
 
 .accounts__account {
-    border: 1px solid red;
+    margin-bottom: $base-offset*0.75;
+    padding: $base-offset/2;
+    display: flex;
+    background: $color-white;
+    align-items: center;
+
+    // &>* {
+    //     border: 1px solid red;
+    // }
+
+    @include card;
+}
+
+.accounts__profile-picture {
+    background: $color-orange;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 600;
+    color: $color-white;
+    margin-right: $base-offset/2;
+    
+    @include font-size(27px, 38px);
+}
+
+.accounts__details {
+    padding-right: $base-offset;
+    border-right: 1px solid rgba($color: $color-black, $alpha: 0.25);
+    flex: 1;
+}
+
+.accounts__name,
+.accounts__amount-number,
+.accounts__date {
+    text-transform: capitalize;
+    font-weight: 600;
+    
+    @include font-size(17px, 24px);
+}
+
+.accounts__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.accounts__amount-label,
+.accounts__description,
+.accounts__date-label {
+    font-style: italic;
+    
+    @include font-size(13px, 18px);
+}
+
+.accounts__amount {
+    width: 10%;
+}
+
+.accounts__last-updated {
+    width: 22%;
+}
+
+.accounts__amount,
+.accounts__last-updated {
+    padding: 0 $base-offset;
+    border-right: 1px solid rgba($color: $color-black, $alpha: 0.25);
+}
+
+.accounts__actions {
+    display: flex;
+    padding-left: $base-offset;
+}
+
+.accounts__action {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--view {
+        background: $color-blue-neutral;
+    }
+
+    &--edit {
+        background: $color-orange;
+        margin: 0 1.25em;
+    }
+
+    &--delete {
+        background: $color-pink;
+    }
+
+    svg {
+        fill: $color-white;
+    }
 }

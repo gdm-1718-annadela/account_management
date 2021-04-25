@@ -9,7 +9,7 @@
 	color: $color-white;
 	padding: $base-offset/2 0;
 
-	@include dashboard-card;
+	@include card;
 }
 
 .dashboard-netto-bruto__title {
