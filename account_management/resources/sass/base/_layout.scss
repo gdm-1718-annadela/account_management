@@ -13,5 +13,8 @@ a {
 }
 
 .content {
+    overflow: auto;
+    flex: 1;
     z-index: 1;
+    background: $color-blue-light;
 }
