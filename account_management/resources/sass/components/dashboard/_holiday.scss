@@ -6,7 +6,7 @@
 	padding: $base-offset $base-offset;
 	background: $color-white;
 
-	@include dashboard-card;
+	@include card;
 }
 
 .dashboard-holiday__day {
