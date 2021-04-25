@@ -34,3 +34,6 @@ Route::get('/account/delete/{id}', 'AccountController@deleteAccount')->name('del
 
 // transactions
 Route::get('/transactions', 'TransactionController@getData');
+Route::get('/transaction/create', 'TransactionController@createTransaction')->name('createTransaction');
+Route::post('/transaction/save', 'TransactionController@saveTransaction')->name('saveTransaction');
+Route::get('/transaction/edit/{id}', 'TransactionController@editTransaction')->name('editTransaction');
