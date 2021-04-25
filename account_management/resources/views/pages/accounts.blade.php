@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('content') 
+@section('content')
 
 <div class="accounts__container">
     @foreach($accounts as $account)
@@ -15,12 +15,13 @@
             </div>
 
             <div class="accounts__amount">
-                <h2 class="accounts__amount-number">€ <span>+</span>{{$account->field_account_total_amount}}</h2>
+                <h2 class="accounts__amount-number">€ <span>+</span>{{ number_format($account->field_account_total_amount, 2) }}</h2>
                 <p class="accounts__amount-label">Total</p>
             </div>
 
             <div class="accounts__last-updated">
-                <h2 class="accounts__date">{{$account->updated_at}}</h2>
+                <h2 class="accounts__date">{{ date('d/m/Y', strtotime($account->updated_at)) }} at {{ date('H:i', strtotime($account->updated_at)) }}</h2>
+
                 <p class="accounts__date-label">Last updated</p>
             </div>
 
