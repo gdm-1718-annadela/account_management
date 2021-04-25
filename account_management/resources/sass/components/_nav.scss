@@ -1,7 +1,9 @@
 .nav {
     width: 20vw;
+    min-width: 300px;
     height: 100vh;
-    position: fixed;
+    // position: fixed;
+    position: relative;
     background: $color-blue-dark;
     // overflow: hidden;
     display: flex;
@@ -101,7 +103,7 @@
     top: 50%;
     right: 0;
     transform: translate(100%, -50%);
-    z-index: 1;
+    z-index: 999;
     will-change: height;
     transition: height 0.1s $animationBezier;
     overflow: hidden;
