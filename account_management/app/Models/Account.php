@@ -13,4 +13,12 @@ class Account extends Model
         'field_account_desc',
         'field_account_total_amount',
     ];
+
+    public function transaction() {
+        return $this->belongsToMany('App\Models\Transaction');
+    }
+
+//    public function transaction(){
+//        return $this->belongsTo('App\Models\Transaction');
+//    }
 }
