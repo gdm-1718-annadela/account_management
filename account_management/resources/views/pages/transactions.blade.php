@@ -10,7 +10,7 @@
             {{$transaction->field_transaction_increased}}
             {{$transaction->field_transaction_amount}}
             <a href="{{route('editTransaction', $transaction->id)}}">edit</a>
-            <a href="">delete</a>
+            <a href="{{route('deleteTransaction', $transaction->id)}}">delete</a>
         @endforeach
     @endforeach
 @endsection

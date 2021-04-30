@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e586245f-6b71-4e99-a885-1b2dd40ce524" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/create-transaction.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/edit-transaction.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/create-transaction.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/create-transaction.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/edit-transaction.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/edit-transaction.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/transactions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/transactions.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -33,7 +32,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -182,6 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615123253662</updated>
       <workItem from="1615123255126" duration="537000" />
+      <workItem from="1619805837182" duration="2428000" />
     </task>
     <servers />
   </component>
@@ -225,5 +225,16 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1619295054455" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/TransactionController.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

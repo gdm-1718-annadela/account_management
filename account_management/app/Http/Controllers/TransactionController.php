@@ -24,7 +24,6 @@ class TransactionController extends Controller
             'date'=> 'required',
             'description'=> 'required',
             'amount'=> 'required',
-            'increased'=> 'required',
         ]);
 
         foreach($request->accounts as $account){
@@ -50,5 +49,29 @@ class TransactionController extends Controller
         $selected_accounts = Transfer::select('account_id')->where('transaction_id', $id)->pluck('account_id');
         $transaction = Transaction::where('id', $id)->first();
         return view('pages.edit-transaction')->with(compact('accounts', 'selected_accounts', 'transaction'));
+    }
+
+    public function updateTransaction($id) {
+        $transaction = Transaction::where('id', $id)->first();
+        \request()->validate( [
+            'date'=> 'required',
+            'description'=> 'required',
+            'amount'=> 'required',
+        ]);
+
+        $data = [
+            'field_transaction_date'=>request('date'),
+            'field_transaction_desc'=>request('description'),
+            'field_transaction_amount'=>request('amount'),
+            'field_transaction_increased'=>request('increased') === 'on'? 1 : 0,
+        ];
+
+        $transaction->update($data);
+        return redirect('/transactions')->with('succes', 'updated');
+    }
+
+    public function deleteTransaction($id) {
+        $transaction = Transaction::where('id', $id)->delete();
+        return redirect()->back();
     }
 }
