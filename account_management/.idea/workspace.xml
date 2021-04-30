@@ -20,20 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e586245f-6b71-4e99-a885-1b2dd40ce524" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.TODO" beforeDir="false" afterPath="$PROJECT_DIR$/.TODO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VariableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VariableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Salary.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Salary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Variable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/variables.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/variables.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/accounts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/accounts.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -182,6 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615123253662</updated>
       <workItem from="1615123255126" duration="537000" />
+      <workItem from="1619352703144" duration="316000" />
     </task>
     <servers />
   </component>
@@ -201,13 +198,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="634" y="334" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616362171398">
+    <state x="634" y="334" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619275674975">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="634" y="334" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1616362171398" />
+    <state x="634" y="334" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1619275674975" />
+    <state x="180" y="122" key="MergeDialog" timestamp="1619275172819">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="180" y="122" key="MergeDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1619275172819" />
+    <state x="534" y="340" key="MultipleFileMergeDialog" timestamp="1619275173780">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="534" y="340" key="MultipleFileMergeDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1619275173780" />
+    <state x="597" y="326" width="598" height="490" key="find.popup" timestamp="1619352936605">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="597" y="326" width="598" height="490" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1619352936605" />
     <state x="561" y="266" key="run.anything.popup" timestamp="1616351269013">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="561" y="266" key="run.anything.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1616351269013" />
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1619352935071">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1619352935071" />
   </component>
 </project>

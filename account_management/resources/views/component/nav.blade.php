@@ -25,8 +25,8 @@
                     Dashboard
                 </a>
             </li>
-            <li class="{{ str_contains(request()->url(), '/accounts') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
-                <a class="nav__link" href="/accounts">
+            <li class="{{ str_contains(request()->url(), '/account') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
+                <a class="nav__link" href="{{ route('viewAccounts') }}">
                     <svg class="nav__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16">
                         <path d="M15.7,9.1C17,10.1,18,11.3,18,13v3h4v-3C22,10.8,18.4,9.5,15.7,9.1z"/>
                         <path d="M14,8c2.2,0,4-1.8,4-4s-1.8-4-4-4c-0.5,0-0.9,0.1-1.3,0.2C13.5,1.3,14,2.6,14,4s-0.5,2.7-1.3,3.8C13.1,7.9,13.5,8,14,8z"/>
@@ -36,7 +36,7 @@
                     Accounts
                 </a>
                 <div class="navsub">
-                    <a href="/accounts" class="navsub__item navsub__add">
+                    <a href="{{ route('createAccount') }}" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M58.333,33.333l-25,0l0,25l-8.333,0l0,-25l-25,0l0,-8.333l25,0l0,-25l8.333,0l0,25l25,0l0,8.333Z"
@@ -71,16 +71,16 @@
                     Variables
                 </a>
             </li>
-            <li class="{{ str_contains(request()->url(), '/transactions') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
+            <li class="{{ str_contains(request()->url(), '/transaction') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
                 <a class="nav__link" href="/transactions">
                     <svg class="nav__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14">
                         <polygon points="4,6 0,10 4,14 4,11 11,11 11,9 4,9 "/>
                         <polygon points="18,4 14,0 14,3 7,3 7,5 14,5 14,8 "/>
-                    </svg>                
+                    </svg>
                     Transactions
                 </a>
                 <div class="navsub">
-                    <a href="/transactions" class="navsub__item navsub__add">
+                    <a href="{{route('createTransaction')}}" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M58.333,33.333l-25,0l0,25l-8.333,0l0,-25l-25,0l0,-8.333l25,0l0,-25l8.333,0l0,25l25,0l0,8.333Z"

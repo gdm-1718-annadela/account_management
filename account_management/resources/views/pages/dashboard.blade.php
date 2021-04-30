@@ -1,7 +1,11 @@
 @extends('layout')
 
 @section('content')
-<h1>Dashboard</h1>
 
-@include('component.dashboard.featured-account')
+<div class="dashboard__container">
+    @include('component.dashboard.featured-account')
+    @include('component.dashboard.netto-bruto')
+    @include('component.dashboard.holiday')
+</div>
+
 @endsection

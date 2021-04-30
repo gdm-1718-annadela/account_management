@@ -1,9 +1,16 @@
 // Base
+@import 'base/variables';
 @import 'base/mixins';
 @import 'base/layout';
-@import 'base/variables';
 @import 'base/fonts';
 @import 'base/typography';
 
+// Pages
+@import 'pages/dashboard';
+@import 'pages/accounts';
+
 // Components
 @import 'components/nav';
+@import 'components/dashboard/featured-account';
+@import 'components/dashboard/netto-bruto';
+@import 'components/dashboard/holiday';

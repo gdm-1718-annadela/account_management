@@ -19,8 +19,7 @@ class CreateAccountTable extends Migration
             $table->string('field_account_name');
             $table->string('field_account_desc')->nullable();
             $table->float('field_account_total_amount');
-            $table->unsignedBigInteger('account_transaction_id');
-            $table->foreign('account_transaction_id')->references('id')->on('account_transaction')->onDelete('cascade');
+
         });
     }
 
