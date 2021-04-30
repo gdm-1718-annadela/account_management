@@ -135,8 +135,7 @@ a {
 }
 
 .nav {
-  width: 17vw;
-  min-width: 300px;
+  width: 20vw;
   height: 100vh;
   position: relative;
   background: #323659;
@@ -187,10 +186,6 @@ a {
   box-shadow: 6px 6px 12px #2d304b, -6px -6px 12px rgba(255, 255, 253, 0.07);
 }
 
-.nav__link-item:hover .navsub__item {
-  opacity: 1;
-}
-
 .nav__link-item:hover:not(.nav__link-item--active) {
   background: #728AE2;
   box-shadow: 6px 6px 12px #2d304b, -6px -6px 12px rgba(255, 255, 253, 0.07);
@@ -238,28 +233,50 @@ a {
   margin-right: 0.7em;
 }
 
-.nav__love {
-  width: 50%;
-  align-self: center;
+.navsub {
+  height: 0%;
+  background: #728AE2;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+  border-top-right-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  z-index: 1;
+  will-change: height;
+  transition: height 0.1s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+  overflow: hidden;
 }
 
-.navsub {
+.nav__link-item:hover .navsub {
+  height: 100%;
+}
+
+.navsub__item {
+  height: 100%;
+  width: 1.5em;
+  padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navsub__item {
+.navsub__item > svg {
   fill: #FFFFFD;
-  opacity: 0;
-  margin-right: 1em;
-  width: 1em;
-  display: flex;
-  transition: transform 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85), opacity 0.2s cubic-bezier(0.85, 0.15, 0.15, 0.85);
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.85, 0.15, 0.15, 0.85);
 }
 
-.navsub__item:hover {
-  transform: scale(1.15) rotate(15deg);
+.navsub__item > svg:hover {
+  transform: rotate(10deg);
+}
+
+.nav__love {
+  width: 50%;
+  align-self: center;
 }
 
 .dashboard-featured-account {
@@ -341,7 +358,7 @@ a {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: url(/images/netto-bruto.svg?757f9e804aa9b3c7d6122b46f2ec258f), linear-gradient(to right, #F55677, #A9498E);
+  background: url(/images/netto-bruto.svg?830288fb1284b9fca82384e3018cb1f9), linear-gradient(to right, #F55677, #A9498E);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto 78%, auto auto;

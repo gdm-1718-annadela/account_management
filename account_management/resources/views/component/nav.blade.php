@@ -36,6 +36,14 @@
                     Accounts
                 </a>
                 <div class="navsub">
+                    <a href="/accounts" class="navsub__item navsub__overview">
+                        <svg width="100%" height="100%" viewBox="0 0 75 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M0,50l75,0l0,-8.333l-75,-0l0,8.333Zm0,-20.833l75,-0l0,-8.334l-75,0l0,8.334Zm0,-29.167l0,8.333l75,0l0,-8.333l-75,0Z"
+                                style="fill-rule:nonzero;" />
+                        </svg>
+                    </a>
                     <a href="/accounts" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -80,6 +88,14 @@
                     Transactions
                 </a>
                 <div class="navsub">
+                    <a href="/transactions" class="navsub__item navsub__overview">
+                        <svg width="100%" height="100%" viewBox="0 0 75 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M0,50l75,0l0,-8.333l-75,-0l0,8.333Zm0,-20.833l75,-0l0,-8.334l-75,0l0,8.334Zm0,-29.167l0,8.333l75,0l0,-8.333l-75,0Z"
+                                style="fill-rule:nonzero;" />
+                        </svg>
+                    </a>
                     <a href="/transactions" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">

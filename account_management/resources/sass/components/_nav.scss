@@ -1,9 +1,10 @@
 .nav {
-    width: 17vw;
-    min-width: 300px;
+    width: 20vw;
     height: 100vh;
+    // position: fixed;
     position: relative;
     background: $color-blue-dark;
+    // overflow: hidden;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,12 +52,6 @@
         box-shadow: 6px 6px 12px #2d304b, -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
     }
 
-    &:hover {
-        .navsub__item {
-            opacity: 1;
-        }
-    }
-
     &:hover:not(.nav__link-item--active) {
         background: $color-blue-neutral;
         box-shadow: 6px 6px 12px #2d304b, -6px -6px 12px rgba($color: $color-white, $alpha: 0.07);
@@ -93,27 +88,50 @@
     }
 }
 
+// sub menus
+.navsub {
+    height: 0%;
+    background: $color-blue-neutral;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+    border-top-right-radius: 100vw;
+    border-bottom-right-radius: 100vw;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    z-index: 1;
+    will-change: height;
+    transition: height 0.1s $animationBezier;
+    overflow: hidden;
+}
+
+.nav__link-item:hover .navsub {
+    height: 100%;
+}
+
+.navsub__item {
+    height: 100%;
+    width: 1.5em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > svg {
+        fill: $color-white;
+        will-change: transform;
+        transition: transform 0.25s $animationBezier;
+
+        &:hover {
+            transform: rotate(10deg);
+        }
+    }
+}
+
 // love
 .nav__love {
     width: 50%;
     align-self: center;
-}
-
-.navsub {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navsub__item {
-    fill: $color-white;
-    opacity: 0;
-    margin-right: 1em;
-    width: 1em;
-    display: flex;
-    transition: transform 0.2s $animationBezier, opacity 0.2s $animationBezier;
-
-    &:hover {
-        transform: scale(1.15) rotate(15deg);
-    }
 }
