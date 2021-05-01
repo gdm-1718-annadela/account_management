@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li class="{{ str_contains(request()->url(), '/account') ? 'nav__link-item--active' : '' }} nav__link-item nav__link-item--dashboard">
-                <a class="nav__link" href="/accounts">
+                <a class="nav__link" href="{{ route('viewAccounts') }}">
                     <svg class="nav__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16">
                         <path d="M15.7,9.1C17,10.1,18,11.3,18,13v3h4v-3C22,10.8,18.4,9.5,15.7,9.1z"/>
                         <path d="M14,8c2.2,0,4-1.8,4-4s-1.8-4-4-4c-0.5,0-0.9,0.1-1.3,0.2C13.5,1.3,14,2.6,14,4s-0.5,2.7-1.3,3.8C13.1,7.9,13.5,8,14,8z"/>
@@ -36,14 +36,6 @@
                     Accounts
                 </a>
                 <div class="navsub">
-                    <a href="{{ route('viewAccounts') }}" class="navsub__item navsub__overview">
-                        <svg width="100%" height="100%" viewBox="0 0 75 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path
-                                d="M0,50l75,0l0,-8.333l-75,-0l0,8.333Zm0,-20.833l75,-0l0,-8.334l-75,0l0,8.334Zm0,-29.167l0,8.333l75,0l0,-8.333l-75,0Z"
-                                style="fill-rule:nonzero;" />
-                        </svg>
-                    </a>
                     <a href="{{ route('createAccount') }}" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -88,14 +80,6 @@
                     Transactions
                 </a>
                 <div class="navsub">
-                    <a href="/transactions" class="navsub__item navsub__overview">
-                        <svg width="100%" height="100%" viewBox="0 0 75 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path
-                                d="M0,50l75,0l0,-8.333l-75,-0l0,8.333Zm0,-20.833l75,-0l0,-8.334l-75,0l0,8.334Zm0,-29.167l0,8.333l75,0l0,-8.333l-75,0Z"
-                                style="fill-rule:nonzero;" />
-                        </svg>
-                    </a>
                     <a href="{{route('createTransaction')}}" class="navsub__item navsub__add">
                         <svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
