@@ -1,0 +1,73 @@
+.dashboard-graph__container {
+    display: flex;
+    width: 100%;
+    margin-top: $base-offset;
+}
+
+.dashboard-graph {
+    width: 55%;
+    height: 300px;
+    overflow: hidden;
+
+    @include card;
+}
+
+.dashboard-graph__legend {
+    flex: 1;
+    margin-left: $base-offset;
+    background: url(../../../media/icons/insights.svg), linear-gradient(to right, $color-blue-dark, $color-purple);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: auto 90%, auto auto;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    color: $color-white;
+
+    @include font-size(17px, 24px);
+    @include card;
+}
+
+.dashboard-graph__legend-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+
+    &:not(:last-child) {
+        padding-bottom: 0.5em;
+    }
+
+    // hide default checkbox
+    & input[type='checkbox'] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    // custom checkmark
+    .dashboard-graph__legend-checkmark {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        display: block;
+        height: 1em;
+        width: 1em;
+        border-radius: 3px;
+        margin-right: 0.5em;
+        transition: background-color 0.15s $animationBezier;
+        background-color: transparent;
+        border: 3px solid currentColor;
+    }
+
+    &:hover .dashboard-graph__legend-checkmark {
+        background-color: $color-white;
+    }
+
+    & input:checked ~ .dashboard-graph__legend-checkmark {
+        background-color: currentColor;
+    }
+}
