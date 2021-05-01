@@ -15,8 +15,10 @@ class PagesController extends Controller
         $salary = Salary::all();
         $gross = Salary::where('field_salary_system_name', 'system_salary_gross')->first();
         $gross = explode(',', number_format($gross->field_salary_amount, 2, ',', '.'));
+        $net = Salary::where('field_salary_system_name', 'system_salary_net')->first();
+        $net = explode(',', number_format($net->field_salary_amount, 2, ',', '.'));
 
-        return view('pages.dashboard')->with(compact('gross'));
+        return view('pages.dashboard')->with(compact('gross', 'net'));
     }
 
     public function calendar() {

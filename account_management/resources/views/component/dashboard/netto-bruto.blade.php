@@ -3,7 +3,12 @@
     <div class="dashboard-netto-bruto__data">
         <div class="dashboard-netto-bruto__netto">
             <h2>
-                €<span>1.678</span>,39
+                €
+                @foreach($net as $value)
+                    @if($loop->first)<span>{{$value}}</span>@endif
+                    @if($loop->last),{{$value}} @endif
+                @endforeach
+{{--                <span>1.678</span>,39--}}
             </h2>
         </div>
         <div class="dashboard-netto-bruto__bruto">
