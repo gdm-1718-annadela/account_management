@@ -8,7 +8,11 @@
         </div>
         <div class="dashboard-netto-bruto__bruto">
             <h2>
-                €<span>1.800</span>,00
+                €
+                @foreach($gross as $value)
+                    @if($loop->first)<span>{{$value}}</span>@endif
+                    @if($loop->last),{{$value}} @endif
+                @endforeach
             </h2>
         </div>
     </div>
