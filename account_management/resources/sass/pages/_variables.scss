@@ -1,0 +1,108 @@
+.variables {
+    overflow-x: auto;
+    width: 80vw;
+    scroll-padding-right: $base-offset;
+}
+
+.variables__wrapper {
+    display: inline-flex;
+    padding: 100px $base-offset $base-offset $base-offset;
+    height: 100%;
+}
+
+.variables__salary,
+.variables__category:not(.variables__category:last-child) {
+    margin-right: $base-offset;
+}
+.variables__salary,
+.variables__category {
+    flex: 1;
+    width: 20vw;
+}
+
+.variables__category-name {
+    font-family: 'Nunito';
+    font-weight: 700;
+    margin-bottom: $base-offset/2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include box();
+    @include font-size(18px, 24px);
+}
+
+.variables__list {
+    @include box();
+}
+
+// lock icons
+// variables__category-lock">
+// <span class="variables__category-lock--open
+
+.variables__category-lock {
+    display: inline-flex;
+
+    &>span {
+        display: flex;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &--open {
+        fill: $color-blue-neutral;
+    }
+
+    &--closed {
+        fill: $color-pink;
+    }
+}
+
+// expense form
+.variables__expense-form {
+    display: flex;
+    padding: 0.5em 0;
+
+    &:not(.variables__expense-form:last-child) {
+        border-bottom: 1px solid rgba($color: $color-black, $alpha: 0.2);
+    }
+}
+
+.variables__expense-name {
+    display: block;
+    box-sizing: padding-box;
+    overflow: hidden;
+    font-size: 14px;
+    border: 0;
+    resize: none;
+    font-family: 'Nunito';
+    
+    &:focus{
+      border: none;
+      outline: none;
+    }
+}
+
+.variables__expense-amount {
+    display: flex;
+}
+
+.variables__expense-value-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.variables__expense-value {
+    width: 100%;
+    text-align: right;
+}
+
+.variables__expense-suffix {
+    padding-left: 0.25em;
+    display: flex;
+    align-items: flex-end;
+}

@@ -1,6 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+    overflow: hidden;
 }
 
 a {
@@ -8,13 +14,29 @@ a {
     cursor: pointer;
 }
 
-#app {
-    display: flex;
-}
-
 .content {
     overflow: auto;
     flex: 1;
     z-index: 1;
     background: $color-blue-light;
+}
+
+main {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+// Hide arrows from number inputs
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

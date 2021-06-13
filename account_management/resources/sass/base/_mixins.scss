@@ -11,12 +11,12 @@ $font-bound-max: 1920px; // will override defaults
 $font-lock-min: 400px !default;
 $font-lock-max: 1000px !default;
 
-//  font-size 
+//  font-size
 @mixin font-size(
-    $min, // font-size 
+    $min, // font-size
     $max: null, // optional maximum font size
-    $lock-min: $font-lock-min, // optional minimum viewport width 
-    $lock-max: $font-lock-max // optional maximum viewport width 
+    $lock-min: $font-lock-min, // optional minimum viewport width
+    $lock-max: $font-lock-max // optional maximum viewport width
 ) {
     & {
         font-size: $min;
@@ -42,8 +42,17 @@ $font-lock-max: 1000px !default;
     @return $input/($input * 0 + 1);
 }
 
+@mixin box($background: $color-white) {
+    background: $background;
+    box-shadow: $box-shadow-default;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
 // Dashboard card
 @mixin card() {
     border-radius: 1em;
     box-shadow: 3px 3px 6px rgba($color: $color-black, $alpha: 0.15);
 }
+
+

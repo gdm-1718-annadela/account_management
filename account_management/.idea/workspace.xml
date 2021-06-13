@@ -42,10 +42,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e586245f-6b71-4e99-a885-1b2dd40ce524" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Transaction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Transfer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brutoloon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/credit-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/expandselection-rotated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/expandselection.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/netto-bruto.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/brutoloon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/checkbox-checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/credit-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/expandselection-rotated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/expandselection.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/graph-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/graph-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/illustration-make-it-rain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/illustration-money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/insights.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/netto-bruto.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/pointer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/icons/view.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/components/dashboard/_featured-account.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/components/dashboard/_holiday.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/components/dashboard/_netto-bruto.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/pages/_accounts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/pages/_dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/component/dashboard/featured-account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/component/dashboard/holiday.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/component/dashboard/netto-bruto.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/create-account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/create-transaction.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/edit-account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/edit-transaction.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/dashboard/netto-bruto.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/dashboard/netto-bruto.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VariableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VariableController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2013_03_06_180559_create_account_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_06_180559_create_account_transaction_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_06_175239_create_account_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_06_175239_create_account_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_06_175658_create_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_06_175658_create_transaction_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/add.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/add.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/lock_closed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/lock_closed.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/lock_open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/lock_open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/logo-anna.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/logo-anna.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/menu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/transaction.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/transaction.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/media/icons/variables.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/media/icons/variables.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/base/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/base/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/base/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/base/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/components/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/component/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/accounts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/accounts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/transactions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/transactions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +268,7 @@
       <updated>1615123253662</updated>
       <workItem from="1615123255126" duration="537000" />
       <workItem from="1619352703144" duration="316000" />
+      <workItem from="1623588790079" duration="515000" />
     </task>
     <servers />
   </component>
@@ -225,14 +292,14 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="634" y="334" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1619275674975" />
-    <state x="180" y="122" key="MergeDialog" timestamp="1619275172819">
+    <state x="180" y="122" key="MergeDialog" timestamp="1623589302335">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="180" y="122" key="MergeDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1619275172819" />
-    <state x="534" y="340" key="MultipleFileMergeDialog" timestamp="1619275173780">
+    <state x="180" y="122" key="MergeDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1623589302335" />
+    <state x="534" y="340" key="MultipleFileMergeDialog" timestamp="1623589303300">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="534" y="340" key="MultipleFileMergeDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1619275173780" />
+    <state x="534" y="340" key="MultipleFileMergeDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1623589303300" />
     <state x="597" y="326" width="598" height="490" key="find.popup" timestamp="1619352936605">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
