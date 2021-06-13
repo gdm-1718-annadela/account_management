@@ -23,10 +23,9 @@
 <div id="app">
     @include('component.nav')
 
-    <main>
-        @include('component.header')
+    <div class="content">
         @yield('content')
-    </main>
+    </div>
 </div>
 </body>
 </html>

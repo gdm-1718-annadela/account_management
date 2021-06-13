@@ -21,6 +21,25 @@ class VariableController extends Controller {
             $expensesByCategory = Expense::all()->where("category_id", $category->id);
             $expenses[$category->field_category_name] = $expensesByCategory;
         }
+
+        // Calculate net pay.
+        $gross = Salary::where('field_salary_system_name', 'system_salary_gross')->first();
+        $rsz = Salary::where('field_salary_system_name', 'system_salary_rsz')->first();
+        $bonus = Salary::where('field_salary_system_name', 'system_salary_bonus')->first();
+        $withholding_tax = Salary::where('field_salary_system_name', 'system_salary_withholding_tax')->first();
+        $reduction = Salary::where('field_salary_system_name', 'system_salary_reduction')->first();
+        $srsz = Salary::where('field_salary_system_name', 'system_salary_srsz')->first();
+        $contribution = Salary::where('field_salary_system_name', 'system_salary_contribution')->first();
+
+        $gross_taxable_salary = $gross->field_salary_amount - ($rsz->field_salary_amount - $bonus->field_salary_amount);
+        $net = $gross_taxable_salary - $withholding_tax->field_salary_amount + $reduction->field_salary_amount + $srsz->field_salary_amount - $contribution->field_salary_amount;
+
+        $salary_net = Salary::where('field_salary_system_name', 'system_salary_net')->first();
+        $data = [
+            'field_salary_amount' => $net
+        ];
+        $salary_net->update($data);
+
         return view('pages.variables')->with(compact('salaries' , 'expenses', 'categories', 'periods'));
     }
 

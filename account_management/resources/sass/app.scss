@@ -6,8 +6,13 @@
 @import 'base/typography';
 @import 'base/helpers';
 
+// Pages
+@import 'pages/dashboard';
+@import 'pages/accounts';
+@import 'pages/variables';
+
 // Components
 @import 'components/nav';
-
-// Pages
-@import 'pages/variables';
+@import 'components/dashboard/featured-account';
+@import 'components/dashboard/netto-bruto';
+@import 'components/dashboard/holiday';

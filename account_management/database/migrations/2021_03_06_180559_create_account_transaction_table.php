@@ -16,8 +16,10 @@ class CreateAccountTransactionTable extends Migration
         Schema::create('account_transaction', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('account_id');
-            $table->integer('transaction_id');
+            $table->unsignedBigInteger('account_id');
+            $table->foreign('account_id')->references('id')->on('account')->onDelete('cascade');
+            $table->unsignedBigInteger('transaction_id');
+            $table->foreign('transaction_id')->references('id')->on('transaction')->onDelete('cascade');
         });
     }
 

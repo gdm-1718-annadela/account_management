@@ -20,8 +20,6 @@ class CreateTransactionTable extends Migration
             $table->string('field_transaction_desc');
             $table->boolean('field_transaction_increased');
             $table->float('field_transaction_amount');
-            $table->unsignedBigInteger('account_transaction_id');
-            $table->foreign('account_transaction_id')->references('id')->on('account_transaction')->onDelete('cascade');
         });
     }
 

@@ -14,15 +14,17 @@ a {
     cursor: pointer;
 }
 
+.content {
+    overflow: auto;
+    flex: 1;
+    z-index: 1;
+    background: $color-blue-light;
+}
+
 main {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-.content {
-    background: $color-blue-light;
     flex: 1;
 }
 
